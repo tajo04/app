@@ -56,7 +56,7 @@ Este repositorio contiene el código fuente de una aplicación web que se conect
    - **Ajustes finales**: Optimización y configuración de la aplicación web con base de datos para un funcionamiento óptimo.
 
 ## Tecnologías Utilizadas
-- **Frontend**: HTML, CSS, JavaScript
+- **Frontend**: PHP
 - **Backend**: PHP
 - **Base de Datos**: PHP
 - **Librerías**: FPDF para generación de PDF, TomSelect para dropdowns interactivos.
@@ -64,4 +64,4 @@ Este repositorio contiene el código fuente de una aplicación web que se conect
 ## Instalación
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone <URL del repositorio>
+   git clone <https://github.com/tajo04/app.git>
