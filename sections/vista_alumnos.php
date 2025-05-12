@@ -125,7 +125,7 @@
                                  <?php echo $alumno['nombre'] . ' ' . $alumno['apellidos']; ?>
                                      <br>
                             <?php foreach ($alumno['cursos'] as $curso) { ?>
-                                 - <a href="#"><?php echo $curso['nombre_curso']; ?></a><br>
+                                 - <a href="certificado.php?idcurso=<?php echo $curso['id'];?>&idalumno=<?php echo $alumno['id'];?>"><?php echo $curso['nombre_curso']; ?></a><br>
                              <?php } ?>
                             </td>
 

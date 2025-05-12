@@ -6,7 +6,7 @@ $id=isset($_POST['id']) ? $_POST['id'] : '' ;
 $nombre_curso=isset($_POST['nombre_curso']) ? $_POST['nombre_curso'] : '' ;
 $accion=isset($_POST['accion']) ? $_POST['accion'] : '' ;
 
-print_r($_POST);
+
 
 if($accion!=''){
 

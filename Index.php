@@ -1,7 +1,21 @@
+<?php
+session_start();
+
+if ($_POST) {
+    if ($_POST['usuario'] == "jero" && $_POST['password'] == "1234") {
+        $_SESSION['usuario'] = $_POST['usuario'];
+        header("Location: sections\index.php");
+        exit;
+    } else {
+        $mensaje = "Usuario o contraseña incorrectos";
+    }
+}
+?>
+
 <!doctype html>
 <html lang="en">
     <head>
-        <title>Title</title>
+        <title>Login</title>
         <!-- Required meta tags -->
         <meta charset="utf-8" />
         <meta
@@ -26,12 +40,18 @@
                     </div>
                         <div class="col-md-4">
                             <br>
-                        <form action="sections/index.php" method="post">
+                        <form action="" method="post">
                             <div class="card">
                             <div class="card-header">Inicio de seción
 
                             </div>
                             <div class="card-body">
+                            <?php if (isset($mensaje)) { ?>
+                                <div class="alert alert-danger" role="alert">
+                                 <strong><?php echo $mensaje; ?></strong>
+                                </div>
+                            <?php } ?>
+
                         
                             <div class="mb-3">
                              <label for="" class="form-label">Usuario</label>
@@ -50,7 +70,7 @@
                             <input
                                 type="password"
                                 class="form-control"
-                                name="contrasenia"
+                                name="password"
                                 id="contarsenia"
                                 aria-describedby="helpId"
                                 placeholder="password"
@@ -83,4 +103,3 @@
         ></script>
     </body>
 </html>
-
