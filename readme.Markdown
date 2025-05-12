@@ -64,4 +64,4 @@ Este repositorio contiene el código fuente de una aplicación web que se conect
 ## Instalación
 1. Clona este repositorio en tu máquina local:
    ```bash
-   git clone <https://github.com/tajo04/app.git>
+   git clone https://github.com/tajo04/app.git
